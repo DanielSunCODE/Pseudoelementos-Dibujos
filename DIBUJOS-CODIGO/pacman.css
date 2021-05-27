@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CUARTO-DIBUJO*/
+.cuarto-dibujo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: blue;
+}
+
+.circulo-amarillo{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid yellow;
+    border-left: 300px solid yellow;
+    border-right: 300px solid transparent;
+    border-top: 300px solid yellow;
+    border-radius: 50%;
+}
+
+.ojo-pacman{
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background: #000;
+    border-radius: 50%;
+    top: 8vh;
+    right: 98vh;
+}
+
+.ojo-pacman::before{
+    content: '';
+    position: absolute;
+    top: 4.2vh;
+    left: -1.2vh;
+    width: 0;
+    height: 0;
+    border-left: 50px solid yellow;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent; 
+    border-radius: 50%;
+}
+
+.puntos{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    right: 25vh;
+    background: white;
+}
+
+.puntos::before,
+.puntos::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 30vh;
+    background: white;
+}
+
+.puntos::after{
+    left: 60vh;
+}
+
+.ghost-1{
+    position: absolute;
+    bottom: 10vh;
+    right: 180vh;
+    width: 100px;
+    height: 130px;
+    border-radius: 100px 100px 0 0; 
+    background: red;
+}
+
+.ghost-1::before,
+.ghost-1::after{
+    content: '';
+    position: absolute;
+    top: 16vh;
+    border-bottom: 30px solid blue;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+.ghost-1::after{
+    left: 8vh;
+}
+
+.ojo-ghost-1{
+    position: absolute;
+    top: 2vh;
+    left: 1.5vh;
+    width: 30px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+}
+
+.ojo-ghost-1::before{
+    content: '';
+    position: absolute;
+    top: 1.6vh;
+    left: 1.3vh;
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+}
+
+.ojo-ghost-1-1{
+    position: absolute;
+    top: 2vh;
+    left: 8.5vh;
+    width: 30px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+}
+
+.ojo-ghost-1-1::before{
+    content: '';
+    position: absolute;
+    top: 1.6vh;
+    left: 1.4vh;
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+}
+
+.ghost-2{
+    position: absolute;
+    top: 10vh;
+    left: 170vh;
+    width: 100px;
+    height: 130px;
+    border-radius: 100px 100px 0 0; 
+    background: pink;
+}
+
+.ghost-2::before,
+.ghost-2::after{
+    content: '';
+    position: absolute;
+    top: 16vh;
+    border-bottom: 30px solid blue;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+.ghost-2::after{
+    left: 8vh;
+}
+
+.ojo-ghost-2{
+    position: absolute;
+    top: 2vh;
+    left: 1.5vh;
+    width: 30px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+}
+
+.ojo-ghost-2::before{
+    content: '';
+    position: absolute;
+    top: 4vh;
+    left: .6vh;
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+}
+
+.ojo-ghost-2-1{
+    position: absolute;
+    top: 2vh;
+    left: 8.5vh;
+    width: 30px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+}
+
+.ojo-ghost-2-1::before{
+    content: '';
+    position: absolute;
+    top: 4vh;
+    left: .7vh;
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+}
